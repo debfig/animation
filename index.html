@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画函数</title>
+    <link rel="shortcut icon" href="初始化/favicon.ico">
+    <link rel="stylesheet" href="初始化/initial.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="box">
+        <span>123</span>
+    </div>
+    <div class="sa"></div>
+    <div class="sb"></div>
+    <input type="text">
+</body>
+<script src="../../js库/jQuery.js"></script>
+<script src="Animat.js"></script>
+<script>
+    let span = document.querySelector('span');
+
+    span.onclick = function() {
+        let a = new Animat(span, {
+            time: 1,
+            length: 500,
+            direction: 'left',
+            shape: 'height',
+            redu: true,
+            loop: true
+        });
+        a.move();
+        a.variant();
+        // a.hide(true);
+    }
+
+
+
+    $('.sa').click(function() {
+        $('.sb').load('explain.txt')
+    })
+</script>
+
+</html>

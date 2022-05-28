@@ -1,0 +1,31 @@
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    background-color: aquamarine;
+}
+
+span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: aliceblue;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.sa {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.sb {
+    /* display: none; */
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}

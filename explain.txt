@@ -1,0 +1,11 @@
+let a = new Animat(span, {   创建实例
+        time: 1,             时间属性
+        length: 900,         变化长度
+        direction: 'top',    移动动画方向
+        shape: 'width',      变化动画方向
+        redu: true,          变化后回到原位
+        loop: true           循环变化
+    });
+    a.move();                移动动画方法
+    a.variant();             变化动画方法
+    a.hide(true);            淡入true 淡出false
